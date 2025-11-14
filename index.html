@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            border-bottom: 3px solid #444;
+            padding-bottom: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ishan Singh</h1>
+    <p>Web Developer | Designer | CSE Student</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education / Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my personal portfolio website! This site showcases my skills, education, and projects.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; align-items: flex-start; gap: 20px;">
+        <img src="myphoto.jpg" alt="My Photo" style="width: 160px; height: 160px; object-fit: cover; border-radius: 10px;">
+        <p>Hi! I'm a Computer Science student at Delhi Technological University with a passion for exploring technology and understanding how things work behind the scenes. I love creating projects that challenge me, help me think differently, and allow me to turn ideas into something real. Whether it’s experimenting with web development, improving my problem-solving skills, or learning new tools, I enjoy the process of discovering and building.
+Outside of tech, I'm someone who genuinely enjoys singing, creativity, and finding inspiration in new experiences. I believe in staying curious, learning by doing, and continuously pushing myself to grow—both as a developer and as a person. My goal is to keep exploring, improving, and contributing to meaningful projects as I move forward in my journey</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education / Skills</h2>
+    <h3>Education</h3>
+    <ul>
+        <li>B.Tech in Computer Science, DTU (2025–2029)</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C</li>
+        <li>Git, GitHub</li>
+        <li>Basic ML / AI</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Short description about the project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Short description about the project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="#" target="_blank">Your Profile</a></p>
+    <p>GitHub: <a href="#" target="_blank">Your GitHub</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Ishan Singh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
