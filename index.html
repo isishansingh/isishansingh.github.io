@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Personal Portfolio</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f5f5;
+        color: #222;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(135deg, #1a1a1a, #ff9800);
+        padding: 25px 20px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+
+    nav {
+        background: #333;
+        padding: 12px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffb74d;
+        transform: scale(1.1);
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    section:nth-child(even) {
+        background: #fafafa;
+        border-radius: 10px;
+    }
+
+    h2 {
+        border-bottom: 3px solid #ff9800;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        color: #ff9800;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #fff8f0;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+        transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        background: #fff3e0;
+    }
+
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #fff;
+        background: #ff9800;
+        padding: 8px 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .card a:hover {
+        background: #e68900;
+    }
+
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+
+    #about img {
+        border: 3px solid #ff9800;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    a {
+        color: #ff9800;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Ishan Singh</h1>
+    <p>Web Developer | Designer | CSE Student</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education / Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my personal portfolio website! This site showcases my skills, education, and projects.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+        <img src="myphoto.jpg" alt="My Photo" style="width: 160px; height: 160px; object-fit: cover; border-radius: 10px;">
+        <p>Hi! I'm a Computer Science student at Delhi Technological University with a passion for exploring technology and understanding how things work behind the scenes. I love creating projects that challenge me, help me think differently, and allow me to turn ideas into something real. Whether it’s experimenting with web development, improving my problem-solving skills, or learning new tools, I enjoy the process of discovering and building.
+Outside of tech, I'm someone who genuinely enjoys singing, creativity, and finding inspiration in new experiences. I believe in staying curious, learning by doing, and continuously pushing myself to grow—both as a developer and as a person. My goal is to keep exploring, improving, and contributing to meaningful projects as I move forward in my journey</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education / Skills</h2>
+    <h3>Schooling</h3>
+    <ul>
+        <li>Somerville School, Noida – till 10th</li>
+        <li>SGMS (Sant Gyanaeshwar Model School) – 11th and 12th</li>
+    </ul>
+    <h3>Higher Education</h3>
+    <ul>
+        <li>B.Tech in Computer Science, DTU (2025–2029)</li>
+    </ul>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C</li>
+        <li>Git, GitHub</li>
+        <li>Basic ML / AI</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Project 1: Personal Portfolio</h3>
+            <p>Short description about the project.</p>
+            <a href="project1.html" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Project 2: Weather App</h3>
+            <p>Short description about the project.</p>
+            <a href="project2.html" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <p>Contact : <a href="mailto:isishan.singh7@gmail.com">isishan.singh7@gmail.com</a></p>
+    <p>Phone: <a href="tel:8595372481">8595372481</a></p>
+    <p>GitHub: <a href="https://github.com/isishansingh/isishansingh.github.io" target="_blank">My GitHub</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Ishan Singh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
